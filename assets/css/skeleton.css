@@ -1,0 +1,45 @@
+.skeleton-loading-card {
+  border-radius: 10px;
+  border: solid 4px #eaeaea;
+}
+
+.skeleton-loading-info {
+  border-radius: 10px;
+  background-color: #eaeaea;
+}
+
+.skeleton-loading-order-products-item-thumbnail {
+  border-radius: 4px;
+  background-color: #eaeaea;
+}
+
+.skeleton-loading-circular-icon {
+  background-color: #eaeaea;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.skeleton-loading-horizontal-seperator{
+  height: 4px;
+  background-color: #eaeaea;
+}
+
+.loading {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+  background-image: linear-gradient(to right, #eeeded 0%, #f1eeee 20%, #fafafa 40%, #eeebeb 100%);
+  background-repeat: no-repeat;
+  position: relative
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0
+  }
+  100% {
+    background-position: 468px 0
+  }
+}
