@@ -33,13 +33,6 @@
               </div>
             </div>
           </nuxt-link>
-          <a href="mailto:ogur.uyanik@gmail.com" target="_blank">
-            <Icon
-              :icon="`flat-ui:mail`"
-              :class="`text-base-content`"
-              class="fill-current h-10 w-10"
-            />
-          </a>
         </ul>
       </nav>
     </div>
@@ -53,42 +46,62 @@ import Menu from "@/interfaces/Menu";
 const menuItems = ref<Array<Menu>>([
   {
     id: 1,
-    title: "Home",
+    title: "Anasayfa",
     slug: "/",
+    featured: null,
+    submenu: [],
     icon: {
-      name: "flat-color-icons:home",
+      name: "bx:bxs-home",
       h: 10,
-      color: "text-red-500",
+      color: "text-color1",
     },
   },
   {
     id: 2,
-    title: "Text To Art",
-    slug: "/text-to-art",
+    title: "Uzmanlarımız",
+    slug: "/uzmanlarimiz",
+    featured: null,
+    submenu: [],
     icon: {
-      name: "emojione-monotone:artist-palette",
+      name: "vaadin:specialist",
       h: 10,
-      color: "text-red-500",
+      color: "text-color1",
     },
   },
   {
     id: 3,
-    title: "Restore Photo",
-    slug: "/restore-photo",
+    title: "Çalışma Alanlarımız",
+    slug: "/calisma-alanlarimiz",
+    featured: null,
+    submenu: [],
     icon: {
-      name: "ic:outline-photo-camera-front",
+      name: "healthicons:social-work",
       h: 10,
-      color: "text-red-500",
+      color: "text-color1",
     },
   },
   {
     id: 4,
-    title: "Image Colorize",
-    slug: "/image-colorize",
+    title: "Blog",
+    slug: "/blog",
+    featured: null,
+    submenu: [],
     icon: {
-      name: "emojione:artist-palette",
+      name: "ant-design:read-filled",
       h: 10,
-      color: "text-red-500",
+      color: "text-color1",
+    },
+  },
+  {
+    id: 5,
+    title: "Randevu/İletişim",
+    slug: "/randevu-iletisim",
+    featured: null,
+    submenu: [],
+    icon: {
+      name: "fluent:contact-card-16-filled",
+      h: 10,
+      color: "text-color1",
     },
   },
 ]);

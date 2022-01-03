@@ -15,9 +15,9 @@
       >
         <!-- LOGO -->
         <a :href="localePath('/')">
-          <div id="logo" class="flex w-48 mx-2 lg:mx-8 lg:w-64">
+          <div id="logo" class="flex w-64 mx-2 lg:mx-8 lg:w-64">
             <img class="w-12 h-12" src="@/assets/images/logo/favicon.png" />
-            <p class="mt-2 ml-2 text-5 lg:text-5font-sans font-bold">
+            <p class="mt-2 ml-2 text-5 lg:text-5 font-sans font-bold">
               Şişli Terapi Enstitüsü
             </p>
           </div>
@@ -45,9 +45,6 @@
               <CommonHeaderMegamenu :menu="item" />
             </li>
           </ul>
-        </div>
-        <div id="theme-switcher" class="flex mx-2 lg:w-10/12 sm:w-full">
-          <DaisyuiThemeSwitcher />
         </div>
 
         <div id="language" class="lg:block w-3/12 lg:w-3/12" v-if="false">
@@ -151,16 +148,17 @@
 </template>
 
 <script setup lang="ts">
+import Menu from "@/interfaces/Menu";
 const { width, type } = useBreakPoints();
 
-const menuItems = ref([
+const menuItems = ref<Array<Menu>>([
   {
     id: 1,
     title: "Uzmanlarımız",
     slug: "/uzmanlarimiz",
     featured: null,
     submenu: [],
-    isAdmin: false,
+    icon: null,
   },
   {
     id: 2,
@@ -168,7 +166,7 @@ const menuItems = ref([
     slug: "/calisma-alanlarimiz",
     featured: null,
     submenu: [],
-    isAdmin: false,
+    icon: null,
   },
   {
     id: 3,
@@ -176,7 +174,7 @@ const menuItems = ref([
     slug: "/blog",
     featured: null,
     submenu: [],
-    isAdmin: false,
+    icon: null,
   },
   {
     id: 4,
@@ -184,7 +182,7 @@ const menuItems = ref([
     slug: "/randevu-iletisim",
     featured: null,
     submenu: [],
-    isAdmin: false,
+    icon: null,
   },
 ]);
 const menuOpen = ref(false);
