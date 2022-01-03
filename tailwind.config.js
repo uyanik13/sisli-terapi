@@ -31,6 +31,8 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       theme1: '#101D3A',
+      primary: '#112244',
+      secondary: '#2F8E1C',
       black: '#000',
       color1: "#122144",
       white: '#ffffff',
@@ -377,13 +379,19 @@ module.exports = {
       '4xl': '56rem',
       '5xl': '64rem',
       '6xl': '72rem',
+      '7xl': '80rem',
       full: '100%'
     },
-    minHeight: {
+    minHeight: (theme, {
+      negative
+    }) => ({
       0: '0',
       full: '100%',
-      screen: '100vh'
-    },
+      screen: '100vh',
+      ...theme('spacing'),
+    }),
+
+
     minWidth: {
       0: '0',
       full: '100%'

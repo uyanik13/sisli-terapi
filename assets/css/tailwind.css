@@ -17,11 +17,11 @@
   label {
     @apply block mb-1 text-xs font-normal tracking-wide uppercase;
   }
-  .btn-secondary {
-    @apply px-12 py-1.5 text-center font-bold text-white transition duration-500 ease-in-out rounded-lg focus:outline-none bg-secondary hover:bg-primary text-4;
+  .button-secondary {
+    @apply px-12 py-1.5 text-center font-bold text-white transition duration-500 ease-in-out rounded-lg focus:outline-none bg-secondary hover:bg-primary  text-3 lg:text-4;
   }
-  .btn-primary {
-    @apply px-12 py-1.5 text-center font-bold text-white transition duration-500 ease-in-out rounded-lg focus:outline-none bg-primary hover:bg-secondary text-4;
+  .button-primary {
+    @apply px-12 py-1.5 text-center font-bold text-white transition duration-500 ease-in-out rounded-lg focus:outline-none bg-primary hover:bg-secondary text-3 lg:text-4;
   }
   .btn-featured-1 {
     @apply px-12 py-3 font-bold text-white transition duration-500 ease-in-out rounded-lg focus:outline-none bg-secondary hover:bg-primary text-5;
@@ -44,7 +44,6 @@
     @apply: bg-green-400;
     background-color: #68d391;
   }
-  
 }
 
 @layer base {
