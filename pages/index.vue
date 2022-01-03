@@ -91,7 +91,7 @@
                     lg:max-w-none
                     rounded-lg
                   "
-                  src="/assets/images/hero/hero.png"
+                  src="/images/hero/hero.png"
                   alt="Achieve the dream"
                 />
               </div>
@@ -99,11 +99,7 @@
           </div>
         </div>
         <div class="absolute bottom-0 right-0 w-full">
-          <img
-            class="w-full h-64"
-            src="assets/images/hero/bg-style.png"
-            alt=""
-          />
+          <img class="w-full lg:h-64" src="/images/hero/bg-style.png" alt="" />
         </div>
       </div>
     </main>

@@ -16,7 +16,7 @@
         <!-- LOGO -->
         <a :href="localePath('/')">
           <div id="logo" class="flex w-48 mx-2 lg:mx-8 lg:w-64">
-            <img class="w-12 h-12" :src="`/logo/favicon.png`" />
+            <img class="w-12 h-12" :src="`/images/logo/favicon.png`" />
             <p class="mt-2 ml-2 text-5 lg:text-5font-sans font-bold">
               Şişli Terapi Enstitüsü
             </p>
