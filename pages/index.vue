@@ -60,7 +60,17 @@
                 </p>
 
                 <div class="flex mt-10 sm:mt-12 space-x-2">
-                  <button class="btn px-8 lg:px-12 bg-indigo-600 border-0">
+                  <button
+                    class="
+                      btn
+                      px-8
+                      lg:px-12
+                      bg-indigo-600
+                      border-0
+                      ml-4
+                      lg:ml-0
+                    "
+                  >
                     Randevu Al
                   </button>
                   <button class="btn px-8 lg:px-12 border-0">
@@ -91,7 +101,7 @@
                     lg:max-w-none
                     rounded-lg
                   "
-                  src="/images/hero/hero.png"
+                  src="@/assets/images/hero/hero.png"
                   alt="Achieve the dream"
                 />
               </div>
@@ -99,7 +109,108 @@
           </div>
         </div>
         <div class="absolute bottom-0 right-0 w-full">
-          <img class="w-full lg:h-64" src="/images/hero/bg-style.png" alt="" />
+          <!-- <IconBgborderblue /> -->
+        </div>
+      </div>
+      <div
+        class="
+          relative
+          bg-gradient-to-t
+          from-color1
+          via-blue-900
+          to-green-500
+          sm:pt-16
+          lg:pt-8 lg:pb-14 lg:overflow-hidden
+          min-h-max
+        "
+      >
+        <div class="mx-auto max-w-full lg:px-4">
+          <div class="px-2">
+            <h2
+              class="
+                text-8 text-center
+                lg:text-center
+                tracking-tight
+                font-extrabold
+                text-white
+                sm:mt-5 sm:text-6xl
+                lg:mt-6
+                xl:text-6xl
+                bg-clip-text
+                text-transparent
+                bg-gradient-to-r
+                from-green-200
+                to-green-400
+                block
+              "
+            >
+              Çalışma Alanlarımız
+            </h2>
+          </div>
+          <div
+            class="
+              flex flex-wrap
+              items-center
+              justify-center
+              lg:space-x-4 lg:mx-auto
+            "
+          >
+            <div
+              v-for="(item, index) in 4"
+              :key="index"
+              class="
+                skeleton-loading-card
+                my-3
+                overflow-hidden
+                bg-white
+                rounded rounded-lg
+                shadow
+              "
+            >
+              <div
+                class="
+                  object-cover
+                  w-full
+                  h-60
+                  lg:h-72
+                  skeleton-loading-order-products-item-thumbnail
+                  loading
+                "
+              />
+              <div class="px-3 pt-2 pb-3 text-center">
+                <div class="flex flex-row items-center justify-between">
+                  <div
+                    class="
+                      flex
+                      items-start
+                      justify-center
+                      text-black
+                      no-underline
+                    "
+                  >
+                    <div
+                      class="
+                        block
+                        skeleton-loading-order-products-item-thumbnail
+                        loading
+                        w-16
+                        h-16
+                        rounded-full
+                      "
+                    />
+                    <div class="grid ml-2">
+                      <div
+                        class="skeleton-loading-info loading h-4 w-64 my-2"
+                      />
+                      <div
+                        class="skeleton-loading-info loading h-4 w-32 my-2"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
