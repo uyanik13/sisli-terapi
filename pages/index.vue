@@ -6,8 +6,8 @@
         class="
           relative
           bg-gradient-to-t
-          from-green-500
-          via-green-600
+          from-color1
+          via-[#ffffff]
           to-color1
           sm:pt-16
           lg:pt-8 lg:pb-14 lg:overflow-hidden
@@ -40,8 +40,8 @@
                     bg-clip-text
                     text-transparent
                     bg-gradient-to-r
-                    from-green-200
-                    to-green-400
+                    from-gray-800
+                    to-gray-600
                     block
                   "
                 >
@@ -52,7 +52,7 @@
                     mt-3
                     text-center
                     lg:text-left
-                    text-gray-300
+                    text-gray-700
                     sm:mt-5 sm:text-xl
                     xl:text-xl
                   "
@@ -73,21 +73,13 @@
                 >
                   <nuxt-link
                     to="/randevu-iletisim"
-                    class="
-                      btn
-                      px-8
-                      lg:px-12
-                      bg-indigo-600
-                      border-0
-                      ml-4
-                      lg:ml-0
-                    "
+                    class="btn px-8 lg:px-12 bg-greenS border-0 ml-4 lg:ml-0"
                   >
                     Randevu Al
                   </nuxt-link>
                   <nuxt-link
                     to="/uzmanlarimiz"
-                    class="btn px-8 lg:px-12 border-0"
+                    class="btn hover:bg-greenS px-8 lg:px-12 border-0"
                   >
                     Uzmanlarımız
                   </nuxt-link>
@@ -97,6 +89,7 @@
             <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
               <div
                 class="
+                  bg-contain
                   mx-auto
                   max-w-md
                   px-4
@@ -132,10 +125,10 @@
       <div
         class="
           relative
-          bg-gradient-to-t
+          bg-gradient-to-b
           from-color1
-          via-blue-900
-          to-green-500
+          via-color2
+          to-white
           sm:pt-16
           py-16
           lg:pt-8 lg:pb-14 lg:overflow-hidden
@@ -157,8 +150,8 @@
                 bg-clip-text
                 text-transparent
                 bg-gradient-to-r
-                from-green-200
-                to-green-400
+                from-gray-800
+                to-gray-600
                 block
               "
             >
@@ -235,7 +228,7 @@
       <!-- CTO Section-->
       <div
         class="
-          bg-green-500
+          bg-greenS
           py-4
           lg:pt-8 lg:pb-14 lg:overflow-hidden
           min-h-max
@@ -308,8 +301,8 @@
                 bg-clip-text
                 text-transparent
                 bg-gradient-to-r
-                from-green-200
-                to-green-400
+                from-gray-800
+                to-gray-600
                 block
               "
             >

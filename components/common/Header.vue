@@ -1,5 +1,5 @@
 <template>
-  <header class="block bg-color1 text-white">
+  <header class="block bg-gradient-to-b from-color1 to-color1 text-white">
     <div id="header" class="w-auto lg:w-full h-15">
       <div
         class="
@@ -9,7 +9,6 @@
           justify-between
           py-4
           mx-auto
-          border-gray-300 border-b-default
           lg:border-none
         "
       >

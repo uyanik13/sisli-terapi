@@ -22,6 +22,14 @@ module.exports = {
   important: false,
   separator: ':',
   theme: {
+    extend: {
+      backgroundImage: () => ({
+        'gradient-radial-to-tr': 'radial-gradient(115% 90% at 0% 100%, var(--tw-gradient-stops))',
+        'gradient-radial-to-tl': 'radial-gradient(115% 90% at 100% 100%, var(--tw-gradient-stops))',
+        'gradient-radial-to-br': 'radial-gradient(90% 115% at 0% 0%, var(--tw-gradient-stops))',
+        'gradient-radial-to-bl': 'radial-gradient(90% 115% at 100% 0%, var(--tw-gradient-stops))',
+      })
+    },
     screens: {
       sm: '576px',
       md: '768px',
@@ -30,12 +38,14 @@ module.exports = {
     },
     colors: {
       transparent: 'transparent',
-      theme1: '#101D3A',
-      primary: '#112244',
-      secondary: '#2F8E1C',
+      theme1: '#096FE0',
+      primary: '#483479',
+      secondary: '#35E0B0',
       black: '#000',
-      color1: "#122144",
+      color1: "#26ACC3",
+      color2: "#7ACDDA",
       white: '#ffffff',
+      greenS: '#25D366',
       gray: {
         100: '#f7fafc',
         200: '#edf2f7',
