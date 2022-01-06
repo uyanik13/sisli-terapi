@@ -22,7 +22,7 @@ const services = ref<Array<Service>>([
 <template>
   <div class="flex flex-col">
     <div
-      class="bg-gradient-to-t from-color1 via-[#ffffff] to-color1 sm:pt-16 lg:pt-8 lg:pb-14"
+      class="bg-gradient-to-t from-color1 via-[#ffffff] to-color1 sm:pt-16 lg:pt-8 pb-14"
     >
       <div class="mx-auto max-w-8xl lg:px-8">
         <div class="py-5 lg:grid lg:grid-cols-2 lg:gap-8">
@@ -39,10 +39,10 @@ const services = ref<Array<Service>>([
           </div>
         </div>
 
-        <div id="service-list">
+        <div id="service-list" class="lg:grid lg:grid-cols-2 lg:gap-8">
           <div
             v-if="services.length"
-            class="flex flex-wrap items-center justify-center lg:space-x-4 lg:mx-auto"
+            class="flex flex-wrap items-center justify-start lg:space-x-4 lg:mx-auto"
           >
             <div
               v-for="(item, index) in services"
