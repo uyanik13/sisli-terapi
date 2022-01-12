@@ -1,108 +1,117 @@
 <template>
   <div class="bg-white">
     <main>
-      <!-- Employeers Section-->
       <div
-        class="
-          relative
-          bg-gradient-to-b
-          from-color1
-          via-green-200
-          to-white
-          sm:pt-16
-          py-16
-          lg:pt-8 lg:pb-14 lg:overflow-hidden
-          min-h-max
-        "
+        class="bg-gradient-to-t from-color1 via-[#ffffff] to-color1 sm:pt-16 lg:pt-8 lg:pb-14"
       >
-        <div class="mx-auto max-w-full lg:px-4">
-          <div class="px-2 py-6">
-            <h2
-              class="
-                text-8 text-center
-                lg:text-center
-                tracking-tight
-                font-extrabold
-                text-white
-                sm:mt-5 sm:text-6xl
-                lg:mt-6
-                xl:text-6xl
-                bg-clip-text
-                text-transparent
-                bg-gradient-to-r
-                from-gray-800
-                to-gray-600
-                block
-              "
-            >
-              Iletisim
-            </h2>
-          </div>
-          <div
-            class="
-              flex flex-wrap
-              items-center
-              justify-center
-              lg:space-x-4 lg:mx-auto
-            "
+        <!-- COMPONENT CODE -->
+        <div class="container mx-auto px-4 mb-24 lg:px-20">
+          <h1
+            class="text-8 text-center lg:text-left tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl bg-clip-text block"
           >
-            <div
-              v-for="(item, index) in 4"
-              :key="index"
-              class="
-                skeleton-loading-card
-                my-3
-                overflow-hidden
-                bg-white
-                rounded rounded-lg
-                shadow
-              "
-            >
-              <div
-                class="
-                  object-cover
-                  w-full
-                  h-60
-                  lg:h-72
-                  skeleton-loading-order-products-item-thumbnail
-                  loading
-                "
+            Randevu & Iletisim
+          </h1>
+          <div
+            class="w-full bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-lg shadow-2xl"
+          >
+            <div class="flex">
+              <h1 class="font-bold uppercase text-5xl">Send us a message</h1>
+            </div>
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+              <input
+                class="input input-primary input-bordered"
+                type="text"
+                placeholder="Name*"
               />
-              <div class="px-3 pt-2 pb-3 text-center">
-                <div class="flex flex-row items-center justify-between">
-                  <div
-                    class="
-                      flex
-                      items-start
-                      justify-center
-                      text-black
-                      no-underline
-                    "
-                  >
-                    <div
-                      class="
-                        block
-                        skeleton-loading-order-products-item-thumbnail
-                        loading
-                        w-16
-                        h-16
-                        rounded-full
-                      "
-                    />
-                    <div class="grid ml-2">
-                      <div
-                        class="skeleton-loading-info loading h-4 w-64 my-2"
-                      />
-                      <div
-                        class="skeleton-loading-info loading h-4 w-32 my-2"
-                      />
-                    </div>
-                  </div>
+              <input
+                class="input input-primary input-bordered"
+                type="text"
+                placeholder="Last Name*"
+              />
+              <input
+                class="input input-primary input-bordered"
+                type="email"
+                placeholder="Email*"
+              />
+              <input
+                class="input input-primary input-bordered"
+                type="number"
+                placeholder="Phone*"
+              />
+            </div>
+            <div class="my-4">
+              <textarea
+                placeholder="Message*"
+                class="w-full h-32 input input-primary input-bordered"
+              ></textarea>
+            </div>
+            <div class="my-2 w-1/2 lg:w-1/2">
+              <button
+                class="btn border-none focus:border-0 uppercase text-sm font-bold tracking-wide bg-color1 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
+              >
+                Send Message
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-color1 rounded-lg"
+          >
+            <div class="flex flex-col text-white">
+              <h1 class="font-bold uppercase text-4xl my-4">
+                Drop in our office
+              </h1>
+              <p class="text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                tincidunt arcu diam, eu feugiat felis fermentum id. Curabitur
+                vitae nibh viverra, auctor turpis sed, scelerisque ex.
+              </p>
+
+              <div class="flex my-4 w-2/3 lg:w-1/2">
+                <div class="flex flex-col">
+                  <i class="fas fa-map-marker-alt pt-2 pr-2" />
                 </div>
+                <div class="flex flex-col">
+                  <h2 class="text-2xl">Main Office</h2>
+                  <p class="text-gray-400">
+                    5555 Tailwind RD, Pleasant Grove, UT 73533
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex my-4 w-2/3 lg:w-1/2">
+                <div class="flex flex-col">
+                  <i class="fas fa-phone-alt pt-2 pr-2" />
+                </div>
+                <div class="flex flex-col">
+                  <h2 class="text-2xl">Call Us</h2>
+                  <p class="text-gray-400">Tel: xxx-xxx-xxx</p>
+                  <p class="text-gray-400">Fax: xxx-xxx-xxx</p>
+                </div>
+              </div>
+
+              <div class="flex my-4 w-2/3 lg:w-1/2">
+                <a
+                  href="https://www.facebook.com/ENLIGHTENEERING/"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="rounded-full bg-white h-8 w-8 inline-block mx-1 text-center pt-1"
+                >
+                  <i class="fab fa-facebook-f text-blue-900" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/enlighteneering-inc-"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="rounded-full bg-white h-8 w-8 inline-block mx-1 text-center pt-1"
+                >
+                  <i class="fab fa-linkedin-in text-blue-900" />
+                </a>
               </div>
             </div>
           </div>
         </div>
+        <!-- COMPONENT CODE -->
       </div>
     </main>
   </div>

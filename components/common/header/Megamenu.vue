@@ -2,16 +2,7 @@
   <div class="relative" @mouseover="showMenu" @mouseleave="hideMenu">
     <NuxtLink
       :to="menu.slug"
-      class="
-        py-6
-        font-bold
-        text-base-100 text-4
-        border-white
-        font-sans
-        hover:text-green-500
-        border-b-3
-        hover:border-blue-600
-      "
+      class="py-6 font-bold text-base-100 text-4 border-white font-sans hover:text-color2 border-b-3 hover:border-blue-600"
       @focus="showMenu"
       @keydown.shift.tab="hideMenu"
       @keydown.esc.exact="hideMenu"
@@ -51,18 +42,7 @@
                 @keydown.up.exact.prevent=""
               >
                 <div
-                  class="
-                    flex
-                    items-center
-                    py-2
-                    pl-4
-                    pr-10
-                    font-normal
-                    text-gray-900
-                    font-sans
-                    group-hover:text-blue-600
-                    whitespace-nowrap
-                  "
+                  class="flex items-center py-2 pl-4 pr-10 font-normal text-gray-900 font-sans group-hover:text-blue-600 whitespace-nowrap"
                 >
                   <img
                     v-if="submenu.icon"

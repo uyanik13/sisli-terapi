@@ -35,6 +35,7 @@ const employeers = ref<Array<Employeer>>([
               >
                 Uzmanlarımız
               </h1>
+
               <h2 class="text-gray-700">
                 Psikolojik Destek Almak İstediğiniz Uzman Psikolog Hakkında
                 Bilgi Edinin
@@ -112,12 +113,12 @@ const employeers = ref<Array<Employeer>>([
       </div>
     </div>
 
-    <div class="bg-greenS mb-16 lg:pt-8 lg:pb-14" my-2>
+    <div class="bg-[#50D4A2] mb-16 lg:pt-8 lg:pb-14" my-2>
       <div class="mx-auto max-w-full">
         <div class="mx-auto max-w-7xl lg:px-8">
           <div class="p-2 lg:py-4 flex flex-col items-center justify-center">
-            <p class="text-gray-300 text-4 lg:text-4">
-              Şişli Terapi Enstitüsü, alanında kendisini yetiştirmiş uzman bir
+            <p class="text-gray-100 text-4 lg:text-4">
+              "Şişli Terapi Enstitüsü, alanında kendisini yetiştirmiş uzman bir
               kadroyu bünyesinde barındırmaktadır. Uzmanlarımız çalışma
               alanlarında sürekli olarak kendisini geliştiren, kendi
               terapi/analiz süreçlerinden geçmiş ya da geçmektedirler.
@@ -126,7 +127,7 @@ const employeers = ref<Array<Employeer>>([
               Sosyal Fobi, Obsesif Kompulsif Bozukluklar, Travmatik Yaşantılar,
               İlişkisel Problemler, Çocuk Oyun Terapileri, Çift Terapisi,
               Bağımlılık Terapisi, Cinsel Terapi, Kişilik Bozuklukları
-              alanlarında çalışmalarına devam etmektedirler.
+              alanlarında çalışmalarına devam etmektedirler."
             </p>
           </div>
         </div>

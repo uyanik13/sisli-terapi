@@ -67,3 +67,49 @@
 html {
   @apply font-sans;
 }
+
+/* Light */
+@font-face {
+  font-family: "Signika";
+  font-weight: 300;
+  font-style: normal;
+  src: url("~assets/fonts/Signika-Light.ttf"); /* IE9 Compat Modes */
+  src: url("~assets/fonts/Signika-Light.ttf") format("ttf"),
+    url("~assets/fonts/Signika-Light.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Signika";
+  font-weight: 400;
+  font-style: normal;
+  src: url("~assets/fonts/Signika-Regular.ttf"); /* IE9 Compat Modes */
+  src: url("~assets/fonts/Signika-Regular.ttf") format("ttf"),
+    url("~assets/fonts/Signika-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Signika";
+  font-weight: 500;
+  font-style: normal;
+  src: url("~assets/fonts/Signika-Medium.ttf"); /* IE9 Compat Modes */
+  src: url("~assets/fonts/Signika-Medium.ttf") format("ttf"),
+    url("~assets/fonts/Signika-Medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Signika";
+  font-weight: 600;
+  font-style: normal;
+  src: url("~assets/fonts/Signika-Semibold.ttf"); /* IE9 Compat Modes */
+  src: url("~assets/fonts/Signika-Semibold.ttf") format("ttf"),
+    url("~assets/fonts/Signika-Semibold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Signika";
+  font-weight: 700;
+  font-style: normal;
+  src: url("~assets/fonts/Signika-Bold.ttf"); /* IE9 Compat Modes */
+  src: url("~assets/fonts/Signika-Bold.ttf") format("ttf"),
+    url("~assets/fonts/Signika-Bold.ttf") format("ttf");
+}

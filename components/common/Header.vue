@@ -2,38 +2,21 @@
   <header class="block bg-gradient-to-b from-color1 to-color1 text-white">
     <div id="header" class="w-auto lg:w-full h-15">
       <div
-        class="
-          container
-          flex
-          items-center
-          justify-between
-          py-4
-          mx-auto
-          lg:border-none
-        "
+        class="container flex items-center justify-between py-4 mx-auto lg:border-none"
       >
         <!-- LOGO -->
-        <a :href="localePath('/')">
+        <nuxt-link :to="localePath('/')">
           <div id="logo" class="flex w-64 mx-2 lg:mx-8 lg:w-64">
             <img class="w-12 h-12" src="@/assets/images/logo/favicon.png" />
             <p class="mt-2 ml-2 text-5 lg:text-5 font-sans font-bold">
               Şişli Terapi Enstitüsü
             </p>
           </div>
-        </a>
+        </nuxt-link>
 
         <div id="menu" class="flex mx-2 lg:w-10/12 sm:w-full">
           <ul
-            class="
-              items-center
-              flex-grow
-              block
-              w-full
-              mt-8
-              font-bold
-              tracking-wide
-              lg:flex lg:flex-initial lg:w-auto lg:mt-0
-            "
+            class="items-center flex-grow block w-full mt-8 font-bold tracking-wide lg:flex lg:flex-initial lg:w-auto lg:mt-0"
             :class="menuOpen ? 'block' : 'hidden'"
           >
             <li
@@ -50,35 +33,14 @@
           <div class="group inline-block">
             <button
               :class="type == 'xs' ? `px-3.5` : ``"
-              class="
-                outline-none
-                text-white
-                focus:outline-none
-                border
-                lg:px-3
-                py-2
-                bg-primary
-                rounded-lg
-                flex
-                items-center
-                lg:w-32
-              "
+              class="outline-none text-white focus:outline-none border lg:px-3 py-2 bg-primary rounded-lg flex items-center lg:w-32"
             >
               <span class="pr-1 font-semibold flex-1">{{
                 type == "xs" ? $i18n.locale : getLocale($i18n.locale)
               }}</span>
               <span>
                 <svg
-                  class="
-                    fill-current
-                    h-4
-                    w-4
-                    transform
-                    group-hover:-rotate-180
-                    transition
-                    duration-150
-                    ease-in-out
-                  "
+                  class="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                 >
@@ -89,20 +51,7 @@
               </span>
             </button>
             <ul
-              class="
-                bg-white
-                border
-                rounded-sm
-                transform
-                scale-0
-                group-hover:scale-100
-                absolute
-                transition
-                duration-150
-                ease-in-out
-                origin-top
-                z-90
-              "
+              class="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top z-90"
             >
               <li
                 v-for="locale in $i18n.availableLocales"
@@ -110,20 +59,7 @@
                 class="py-1 rounded-md shadow-xs"
               >
                 <a
-                  class="
-                    block
-                    px-2
-                    lg:px-4
-                    py-2
-                    text-sm
-                    leading-5
-                    text-gray-700
-                    transition
-                    duration-150
-                    ease-in-out
-                    hover:bg-gray-200
-                    focus:outline-none focus:bg-gray-100
-                  "
+                  class="block px-2 lg:px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-200 focus:outline-none focus:bg-gray-100"
                   role="menuitem"
                 >
                   <button

@@ -292,8 +292,8 @@ module.exports = {
     fontFamily: {
       sans: [
         '-apple-system',
-        'HankenSans',
         'BlinkMacSystemFont',
+        'Signika',
         '"Segoe UI"',
         'Roboto',
         '"Helvetica Neue"',
@@ -308,6 +308,7 @@ module.exports = {
         '"Noto Color Emoji"'
       ],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      signika: ['Signika'],
       mono: [
         'Menlo',
         'Monaco',

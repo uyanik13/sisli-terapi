@@ -45,7 +45,7 @@ const services = ref<Array<Service>>([
     <main>
       <!-- Hero Section-->
       <div
-        class="relative bg-gradient-to-t from-color1 via-[#ffffff] to-color1 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden min-h-max"
+        class="relative bg-gradient-to-t from-color1 via-[#d3cbcb] to-color1 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden min-h-max"
       >
         <div class="mx-auto max-w-7xl lg:px-8 h-104">
           <div class="lg:grid lg:grid-cols-2 lg:gap-8">
@@ -54,12 +54,13 @@ const services = ref<Array<Service>>([
             >
               <div class="lg:py-12 w-full px-2">
                 <h1
-                  class="pt-8 text-8 text-center lg:text-left tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-gray-600 block"
+                  class="pt-8 text-8 text-center lg:text-left tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl bg-clip-text block"
                 >
                   Şişli Terapi Enstitüsü
                 </h1>
+
                 <p
-                  class="mt-3 text-center lg:text-left text-gray-700 sm:mt-5 sm:text-xl xl:text-xl"
+                  class="mt-3 text-center lg:text-left text-gray-700 sm:mt-5 sm:text-xl xl:text-xl font-bold"
                 >
                   İstanbul Beşiktaş'ta Uzman Psikologlarımızdan Destek Almak
                   İçin Bize Ulaşabilirsiniz
@@ -108,7 +109,7 @@ const services = ref<Array<Service>>([
         <div class="mx-auto max-w-full lg:px-4">
           <div class="px-2 py-6">
             <h2
-              class="text-8 text-center lg:text-center tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-gray-600 block"
+              class="text-8 text-center lg:text-center tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl bg-clip-text block"
             >
               Çalışma Alanlarımız
             </h2>
@@ -200,16 +201,15 @@ const services = ref<Array<Service>>([
                   <p class="text-6 lg:text-7 font-semibold text-white">
                     Online Terapi
                   </p>
-                  <span class="text-gray-300 text-4.5 lg:text-5"
-                    >Uzman Psikologlarımızdan Online Olarak Destek
-                    Alabilirsiniz</span
-                  >
+                  <p class="text-gray-300 text-4.5 lg:text-5 text-center">
+                    Uzman Psikologlarımızdan Online Olarak Destek Alabilirsiniz
+                  </p>
                 </div>
               </div>
               <div class="flex justify-center items-center">
                 <nuxt-link
                   to="/randevu-iletisim"
-                  class="btn px-8 lg:px-12 bg-indigo-600 border-0 ml-4 lg:ml-0"
+                  class="btn hover:bg-color1 px-8 lg:px-12 border-0"
                 >
                   Randevu Al
                 </nuxt-link>
@@ -226,7 +226,7 @@ const services = ref<Array<Service>>([
         <div class="mx-auto max-w-full lg:px-4">
           <div class="px-2 py-6">
             <h2
-              class="text-8 text-center lg:text-center tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-gray-600 block"
+              class="text-8 text-center lg:text-center tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl bg-clip-text block"
             >
               Uzmanlarımız
             </h2>
