@@ -31,7 +31,7 @@ const services = ref<Array<Service>>([
           >
             <div class="w-full px-2">
               <h1
-                class="text-8 text-center lg:text-left tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-gray-600 block"
+                class="text-8 text-center lg:text-left tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl bg-clip-text block"
               >
                 Çalışma Alanlarımız
               </h1>
