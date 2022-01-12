@@ -68,7 +68,8 @@ export default defineNuxtConfig({
 
   // server middleware to serve sw.js, workbox-**.js and manifest.webmanifest
   serverMiddleware: [
-    { path: '/', handler: '~/server-middleware/sw.js'},
+    { path: '/', handler: '~/server-middleware/sw.js' },
+   // { path: '/api', handler: '~/server/api/index.ts' },
   ],
 
   build: {
@@ -80,6 +81,7 @@ export default defineNuxtConfig({
         },
       },
     },
+     transpile: ["@urql/vue"]
   },
 
   // buildDir: 'nuxt-build',
