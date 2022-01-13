@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useGetPosts } from "@/queries/post";
+import { useGetServices } from "@/queries/service";
 import Employeer from "@/interfaces/Employeer";
 import Service from "@/interfaces/Service";
 
@@ -38,6 +40,11 @@ const services = ref<Array<Service>>([
     image: "assets/images/content/kid-therapy.jpg",
   },
 ]);
+
+//const { result, loading } = await useGetPosts();
+const { result, loading } = await useGetServices();
+
+console.log(result.value, loading.value);
 </script>
 
 <template>

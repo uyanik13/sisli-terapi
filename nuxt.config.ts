@@ -1,7 +1,8 @@
 import { defineNuxtConfig } from 'nuxt3'
 import { VitePWA } from 'vite-plugin-pwa'
 import pwaConfigurationFactory from './pwaConfiguration'
-
+import '@nuxt3/apollo-module'
+import graphql from '@rollup/plugin-graphql';
 /// //////////////////////////////////////////////
 // Site config
 // Domain where the website will be deployed
@@ -81,7 +82,9 @@ export default defineNuxtConfig({
         },
       },
     },
-     transpile: ["@urql/vue"]
+     transpile: [
+      '@apollo/client'
+    ],
   },
 
   // buildDir: 'nuxt-build',
@@ -91,12 +94,29 @@ export default defineNuxtConfig({
   ],
   buildModules: [
     '@pinia/nuxt',
-    '@intlify/nuxt3'
+    '@intlify/nuxt3',
+    '@nuxt3/apollo-module'
   ],
+
+  apollo: {
+    default: {
+       // Provide required constructor fields
+        uri: 'http://localhost:3000/graphql',
+  
+    },
+    client1: {
+      uri: 'http://localhost:3000/',
+    },
+    client2: {
+      // multiple client
+    }
+  },
+  
 
 
   vite: {
     plugins: [
+      graphql(),
       VitePWA(pwaConfigurationFactory(false, undefined, siteName, siteShortName, siteDescription))
     ]
   }

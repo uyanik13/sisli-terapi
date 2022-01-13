@@ -1,7 +1,0 @@
-query allCountries($filter: CountryFilterInput) {
-    countries: countries(filter: $filter) {
-        code
-        name
-        emoji
-    }
-}

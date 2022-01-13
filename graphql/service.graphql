@@ -1,0 +1,58 @@
+query UserServices {
+  userServices(userId: "USER_ID") {
+    ...ServiceData
+  }
+}
+
+query PublishedServicesConnection {
+  publishedServices(first: 20, orderBy: { field: title, direction: desc }) {
+    totalCount
+    edges {
+      cursor
+      node {
+        ...ServiceData
+        author {
+          ...UserData
+        }
+      }
+    }
+    pageInfo {
+      startCursor
+      endCursor
+      hasNextPage
+      hasPreviousPage
+    }
+  }
+}
+
+mutation CreateService{
+  createService(data: { content: "Hello", title: "New Post" }) {
+    ...ServiceData
+  }
+}
+
+subscription SubscriptionService {
+  serviceCreated {
+    ...ServiceData
+  }
+}
+
+fragment ServiceData on Service {
+  id
+  createdAt
+  updatedAt
+  published
+  title
+  image
+  content
+}
+
+fragment UserData on User {
+  id
+  email
+  firstname
+  lastname
+  role
+}
+
+
